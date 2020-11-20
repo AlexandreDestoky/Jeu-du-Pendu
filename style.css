@@ -25,3 +25,27 @@
   color:white;
   user-select: none;
 }
+
+.erreur {
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+.erreur div {
+  margin: 10px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+
+  background: url("img/croix.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding:5px;
+  border-bottom: 2px solid black;
+  width:30px;
+  text-align: center;
+  color:black;
+  user-select: none;
+}

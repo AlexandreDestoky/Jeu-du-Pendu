@@ -9,7 +9,6 @@
   border:1px solid black;
   display: flex;
   justify-content: center;
-  
 }
 
 .lettres div {
@@ -30,6 +29,7 @@
   border:1px solid black;
   display: flex;
   justify-content: center;
+  height:80px;
 }
 
 .erreur div {
@@ -47,4 +47,11 @@
   text-align: center;
   color:black;
   user-select: none;
+}
+
+.score {
+  border:1px solid black;
+  font-family: cursive;
+  text-align: center;
+  font-size: 30px;
 }

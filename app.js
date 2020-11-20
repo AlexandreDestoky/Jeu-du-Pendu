@@ -1,6 +1,7 @@
 let lettres = document.querySelector(".lettres");
 let erreur = document.querySelector(".erreur");
 let image = document.querySelector(".pendu img");
+let score = document.querySelector(".score");
 let etape = 1; // étape image
 let presenceLettre = false;
 let tabLettreErreur = []; // liste des lettres tapé non présente dans le mot
@@ -51,6 +52,7 @@ document.body.addEventListener("keydown", (e) => {
           // si toutes les cases sont bien remplies, on arrête de jouer
           if(testJeuFini()) {
             stop = true;
+            score.innerHTML = "🎉 félicitations vous avez gagné ! 🎉";
           }
         }
       });
@@ -79,8 +81,10 @@ let affichageErreur = (lettre) => {
     let divError = document.createElement("div");
     divError.textContent = lettre;
     erreur.append(divError);
+    //si le joueur a fait 6 erreurs on arrête le jeu et on affiche le score
     if(tabLettreErreur.length >=6) {
       stop = true;
+      score.innerHTML = "😭 vous avez perdu, vous aurez plus de chance la prochaine fois 😭";
     }
   }
 };

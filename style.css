@@ -1,0 +1,27 @@
+.pendu {
+  border:1px solid black;
+  width:400px;
+  height:400px;
+  margin: auto;
+}
+
+.lettres {
+  border:1px solid black;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.lettres div {
+  margin: 10px;
+  font-size: 40px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-transform: uppercase;
+  background-color: aqua;
+  padding:5px;
+  border-bottom: 2px solid black;
+  width:30px;
+  text-align: center;
+  color:white;
+  user-select: none;
+}

@@ -130,7 +130,8 @@ let testJeuFini = () => {
 
 //RECOMMENCE LA PARTIE QUAND ON CLIQUE SUR LE BOUTON REJOUER
 btnRejouer.addEventListener("click", () => {
-  image.src = `img/etape1.png`;
+  etape = 1;
+  image.src = `img/etape${etape}.png`;
   //on vide l'affichage des lettres/erreur/score
   lettres.innerHTML = "";
   erreur.innerHTML = "";

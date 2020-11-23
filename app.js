@@ -65,12 +65,12 @@ document.body.addEventListener("keydown", (e) => {
   if (stop == false) {
     //on ne test la lettre que si une lettre de l'alphabet de 1 caractères
     //pour éviter d'accepter 'enter' par exemple
-    if (e.key.match(/[a-z]/) && e.key.length == 1) {
+    if (e.key.match(/[a-zA-Z]/) && e.key.length == 1) {
       presenceLettre = false;
 
       //si la lettre est présente dans le mot, on l'a fait apparaitre
       tabLettres.forEach((lettre) => {
-        if (e.key == lettre) {
+        if (e.key == lettre || e.key == lettre.toUpperCase) {
           presenceLettre = true;
           for (const divLettre of divLettres) {
             if (divLettre.textContent == lettre) {
